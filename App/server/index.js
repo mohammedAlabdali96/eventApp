@@ -7,7 +7,6 @@ import postRoutes from './routs/posts.js'
 
 
 const app= express();
-app.use('/posts', postRoutes);
 
 console.log(postRoutes)
 
@@ -15,6 +14,7 @@ console.log(postRoutes)
 app.use(bodyParsser.json({limit: "30mb", extended: true}))
 app.use(bodyParsser.urlencoded({limit: "30mb", extended: true}))
 app.use(cors());
+app.use('/posts', postRoutes);
 
 
 const CONNECTION_URL="mongodb+srv://mohammedAlabdali:07712326526Al@cluster0.r7k0q.mongodb.net/<dbname>?retryWrites=true&w=majority";
