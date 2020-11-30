@@ -8,7 +8,6 @@ import postRoutes from './routs/posts.js'
 
 const app= express();
 
-console.log(postRoutes)
 
 
 app.use(bodyParsser.json({limit: "30mb", extended: true}))
