@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {useHistory} from 'react-router-dom'
+import { useHistory } from 'react-router-dom';
 import { Avatar, Button, Paper, Grid, Typography, Container, TextField } from '@material-ui/core';
 import { GoogleLogin } from 'react-google-login';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
@@ -7,20 +7,35 @@ import { useDispatch } from 'react-redux';
 import useStyles from './styles';
 import Input from './Input';
 import Icon from './icon';
+import { signup, signin } from '../../actions/auth';
+
+const initialState = {
+  firstName: '',
+  lastName: '',
+  email: '',
+  password: '',
+  confirmPassword: '',
+};
 
 const Auth = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [isSignUp, setIsSignUp] = useState(false);
+  const [formData, setFormData] = useState(initialState);
   const classes = useStyles();
   const dispatch = useDispatch();
   const history = useHistory();
 
-  const handleSubmit = () => (
-    console.log('ssss')
-  );
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (isSignUp) {
+      dispatch(signup(formData, history));
+    } else {
+      dispatch(signin(formData, history));
+    }
+  };
 
-  const handleChange = () => (
-    console.log('sdfsd')
+  const handleChange = (e) => (
+    setFormData({ ...formData, [e.target.name]: e.target.value })
   );
 
   const handleShowPassword = () => (
@@ -29,7 +44,7 @@ const Auth = () => {
 
   const switchMode = () => {
     setIsSignUp((prevIsSignUp) => !prevIsSignUp);
-    handleShowPassword(false);
+    setShowPassword(false);
   };
 
   const googleFailure = () => {
@@ -43,7 +58,7 @@ const Auth = () => {
     const token = res?.tokenId;
     try {
       dispatch({ type: 'AUTH', data: { result, token } });
-      history.push('/')
+      history.push('/');
     } catch (error) {
       console.log(error);
     }
@@ -62,7 +77,7 @@ const Auth = () => {
                             isSignUp && (
                             <>
                               <Input autoFocus name="firstName" label="First Name" handleChange={handleChange} half />
-                              <Input autoFocus={false} name="firstName" label="First Name" handleChange={handleChange} half />
+                              <Input autoFocus={false} name="lastName" label="Last Name" handleChange={handleChange} half />
                             </>
                             )
             }

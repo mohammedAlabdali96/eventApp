@@ -4,18 +4,18 @@
     <list default="true" id="d729ee52-8bf7-44c4-b021-fbe92c9bde9e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/App/client/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/client/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/App/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/client/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/client/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/client/src/components/Auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/client/src/components/Auth/Auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/client/src/components/Form/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/client/src/components/Form/Form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/client/src/components/Form/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/client/src/components/Form/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/client/src/components/Posts/Posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/client/src/components/Posts/Posts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/client/src/components/Posts/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/client/src/components/Posts/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/client/src/constants/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/client/src/constants/actionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/client/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/client/src/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/client/src/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/client/src/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/server/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/client/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/client/src/components/Navbar/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/client/src/components/Posts/Post/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/client/src/components/Posts/Post/Post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/client/src/reducers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/client/src/reducers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/client/src/reducers/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/client/src/reducers/posts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/server/controllers/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/server/controllers/posts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/server/models/postMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/server/models/postMessage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/App/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/server/routs/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/server/routs/posts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,7 @@
       <workItem from="1627894274447" duration="599000" />
       <workItem from="1628147482442" duration="603000" />
       <workItem from="1634845474349" duration="6003000" />
-      <workItem from="1634982242466" duration="6708000" />
+      <workItem from="1634982242466" duration="19953000" />
     </task>
     <servers />
   </component>
